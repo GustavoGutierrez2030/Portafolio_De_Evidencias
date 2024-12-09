@@ -9,45 +9,17 @@
 </head>
 
 <body>
-    <!-- Botón para Sidebar -->
-    <button class="toggle-sidebar" onclick="toggleSidebar()">☰</button>
-  
-    <!-- Pantalla de Portada -->
-    <div id="cover-page" class="cover-page">
-      <div class="cover-content">
-        <img src="logo.png" alt="Logo de la institución" class="cover-logo">
-        <h1>Portafolio de Evidencias del Curso de Desarrollo de Aplicaciones Web</h1>
-        <p><strong>Estudiante:</strong> Gustavo Adolfo Gutiérrez Martínez</p>
-        <p><strong>Profesor:</strong> Nombre del Profesor</p>
-        <p><strong>Fecha:</strong> 12/2024</p>
-        <button onclick="enterPortfolio()">Entrar</button>
-      </div>
+  <div id="cover-page" class="cover-page">
+    <div class="cover-content">
+      <img src="logo.png" alt="Logo de la institución" class="cover-logo">
+      <h1>Portafolio de Evidencias del Curso de Desarrollo de Aplicaciones Web</h1>
+      <p><strong>Estudiante:</strong> Gustavo Adolfo Gutiérrez Martínez</p>
+      <p><strong>Profesor:</strong> Nombre del Profesor</p>
+      <p><strong>Fecha:</strong> 12/2024</p>
+      <button class="enter-button" onclick="enterPortfolio()">Entrar</button>
     </div>
-  
-    <!-- Contenedor Principal -->
-    <div class="container">
-      <aside class="sidebar">
-        <h1>Unidades</h1>
-        <ul>
-          <li>
-            <button onclick="toggleTopics('unit1-topics')">Unidad 1</button>
-            <ul id="unit1-topics" class="topics hidden">
-              <li><button onclick="loadPDF('unidad1/unidad1_tarea1.pdf')">Tema 1: Introducción</button></li>
-            </ul>
-          </li>
-          <!-- Más unidades -->
-        </ul>
-      </aside>
-      <main class="main-content">
-        <h1>Portafolio de Evidencias</h1>
-        <div id="pdf-viewer">
-          <iframe id="pdf-frame" src="" title="Visor de PDF"></iframe>
-        </div>
-      </main>
-    </div>
-    <script src="script.js"></script>
-  </body>
-  
-  
+  </div>
+  <script src="script.js"></script>
+</body>
 
 </html>
