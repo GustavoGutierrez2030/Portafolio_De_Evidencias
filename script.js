@@ -15,4 +15,13 @@ function loadPDF(pdfPath) {
       console.error("El iframe no se encontró.");
     }
   }
+
+  function enterPortfolio() {
+    const coverPage = document.getElementById('cover-page');
+    const mainContent = document.getElementById('main-content');
+  
+    // Oculta la portada y muestra el contenido principal
+    coverPage.classList.add('hidden');
+    mainContent.classList.remove('hidden');
+  }
   
