@@ -8,10 +8,11 @@ function toggleTopics(topicId) {
 }
 
 function loadPDF(pdfPath) {
-  const pdfFrame = document.getElementById('pdf-frame');
-  if (pdfFrame) {
-    pdfFrame.src = '/Portafolio_De_Evidencias/pdfs/${pdfPath}';
-  } else {
-    console.error("El iframe no se encontró.");
+    const pdfFrame = document.getElementById('pdf-frame');
+    if (pdfFrame) {
+      pdfFrame.src = `/Portafolio_De_Evidencias/pdfs/${pdfPath}`;
+    } else {
+      console.error("El iframe no se encontró.");
+    }
   }
-}
+  
