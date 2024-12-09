@@ -10,7 +10,7 @@ function toggleTopics(topicId) {
 function loadPDF(pdfPath) {
   const pdfFrame = document.getElementById('pdf-frame');
   if (pdfFrame) {
-    pdfFrame.src = `pdfs/${pdfPath}`;
+    pdfFrame.src = 'pdfs/${pdfPath}';
   } else {
     console.error("El iframe no se encontró.");
   }
