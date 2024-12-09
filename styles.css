@@ -24,30 +24,6 @@ body {
     background-color: #45a049;
   }
   
-  /* Botón para ocultar/mostrar sidebar */
-  .toggle-sidebar {
-    position: fixed;
-    top: 20px;
-    left: 20px;
-    z-index: 1000;
-    background: #6c5ce7;
-    color: white;
-    border: none;
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-    cursor: pointer;
-    transition: transform 0.3s ease;
-  }
-  
-  .toggle-sidebar:hover {
-    transform: scale(1.1);
-  }
-  
   /* Pantalla de Portada */
   .cover-page {
     display: flex;
@@ -78,21 +54,16 @@ body {
   }
   
   .sidebar {
-    position: fixed;
-    top: 0;
-    left: 0;
     width: 250px;
-    height: 100%;
     background: linear-gradient(135deg, #6c5ce7, #74b9ff);
     color: white;
     padding: 20px;
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
-    transform: translateX(0);
     transition: transform 0.3s ease;
   }
   
   .sidebar.hidden {
-    transform: translateX(-100%);
+    display: none;
   }
   
   .sidebar h1 {
@@ -138,22 +109,19 @@ body {
   
   /* Contenido Principal */
   .main-content {
-    margin-left: 250px;
+    flex-grow: 1;
     padding: 20px;
-    height: 100%;
     background: #ecf0f1;
     overflow-y: auto;
-    transition: margin-left 0.3s ease;
   }
   
-  .main-content.full {
-    margin-left: 0;
+  .main-content.fullscreen {
+    padding: 0;
   }
   
   #pdf-viewer {
     width: 100%;
-    height: calc(100vh - 60px);
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    height: 100vh;
   }
   
   #pdf-frame {
@@ -161,7 +129,36 @@ body {
     height: 100%;
     border: none;
     background: white;
-    border-radius: 5px;
+    border-radius: 0;
+  }
+  
+  /* Botón para Sidebar */
+  .toggle-sidebar {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 1000;
+    background: #6c5ce7;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    display: none; /* Oculto por defecto */
+  }
+  
+  .toggle-sidebar.visible {
+    display: flex;
+  }
+  
+  .toggle-sidebar:hover {
+    transform: scale(1.1);
   }
   
   /* Responsivo */
@@ -172,14 +169,6 @@ body {
   
     .sidebar {
       width: 200px;
-    }
-  
-    .main-content {
-      margin-left: 200px;
-    }
-  
-    .main-content.full {
-      margin-left: 0;
     }
   }
   
