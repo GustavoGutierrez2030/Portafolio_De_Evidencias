@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portafolio de Evidencias</title>
   <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-  <!-- Pantalla de Portada -->
+    <!-- Pantalla de Portada -->
   <div id="cover-page" class="cover-page">
     <div class="cover-content">
       <img src="logo.png" alt="Logo de la institución" class="cover-logo">
@@ -18,30 +20,38 @@
       <button onclick="enterPortfolio()">Entrar</button>
     </div>
   </div>
-
-  <!-- Contenido Principal -->
-  <div id="main-content" class="hidden">
-    <div id="sidebar">
+  
+  <div class="container">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <h1>Unidades</h1>
       <ul>
         <li>
-          Unidad 1
-          <ul>
-            <li><button onclick="loadPDF('unidad1/unidad1_tarea1.pdf')">Tema 1</button></li>
-            <li><button onclick="loadPDF('unidad1/unidad1_tarea2.pdf')">Tema 2</button></li>
+          <button onclick="toggleTopics('unit1-topics')">Unidad 1</button>
+          <ul id="unit1-topics" class="topics hidden">
+            <li><button onclick="loadPDF('unidad1/unidad1_tarea1.pdf')">Tema 1: Introducción</button></li>
+            <li><button onclick="loadPDF('unidad1_tema2.pdf')">Tema 2: Conceptos básicos</button></li>
           </ul>
         </li>
         <li>
-          Unidad 2
-          <ul>
-            <li><button onclick="loadPDF('unidad2/unidad2_tarea1.pdf')">Tema 1</button></li>
-            <li><button onclick="loadPDF('unidad2/unidad2_tarea2.pdf')">Tema 2</button></li>
+          <button onclick="toggleTopics('unit2-topics')">Unidad 2</button>
+          <ul id="unit2-topics" class="topics hidden">
+            <li><button onclick="loadPDF('unidad2_tema1.pdf')">Tema 1: Diseño</button></li>
+            <li><button onclick="loadPDF('unidad2_tema2.pdf')">Tema 2: Implementación</button></li>
           </ul>
         </li>
       </ul>
-    </div>
-    <iframe id="pdf-frame" src="" title="Visor de PDF" width="100%" height="500px"></iframe>
-  </div>
+    </aside>
 
+    <!-- Main Content -->
+    <main class="main-content">
+      <h1>Portafolio de Evidencias</h1>
+      <div id="pdf-viewer">
+        <iframe id="pdf-frame" src="" title="Visor de PDF"></iframe>
+      </div>
+    </main>
+  </div>
   <script src="script.js"></script>
 </body>
+
 </html>
