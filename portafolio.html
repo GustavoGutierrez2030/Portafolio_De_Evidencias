@@ -22,16 +22,15 @@
         <li>
           <button onclick="toggleTopics('unit1-topics')">U1 - Introducción al Desarrollo Web</button>
           <ul id="unit1-topics" class="topics hidden">
-            <li><button onclick="loadPDF('unidad1/unidad1_tarea1.pdf')">Actividad 1. Arquitectura de una aplicación web</button></li>
-            <li><button onclick="loadPDF('unidad1/unidad1_tarea2.pdf')">Actividad 2. Protocolo HTTP y HTTPS</button></li>
-            <li><button onclick="loadPDF('unidad1/unidad1_tarea3.pdf')">Actividad 3. Estructura básica de un documento HTML</button></li>
-            <li><button onclick="loadPDF('unidad1/unidad1_tarea4.pdf')">Actividad 4. Principales etiquetas y atributos de HTML</button></li>
-            <li><button onclick="loadPDF('unidad1/unidad1_tarea5.pdf')">Actividad 5. Formularios y elementos multimedia</button></li>
-            <li><button onclick="loadPDF('unidad1/unidad1_tarea9.pdf')">Actividad 9. Demostrar el ambiente de desarrollo en la computadora del estudiante</button></li>
-            <li><button onclick="loadPDF('unidad1/unidad1_tarea10.pdf')">Actividad 10. Desarrollar una aplicación web que autentique un usuario válido</button></li>
-            <li><button onclick="loadPDF('unidad1/unidad1_tarea11.pdf')">Actividad 11. Ejercicios jQuery</button></li>
-            <li><button onclick="loadPDF('unidad1/unidad1_tarea12.pdf')">Actividad 12. XML</button></li>
-            <li><button onclick="loadPDF('unidad1/unidad1_tarea13.pdf')">Actividad 13. JSON</button></li>
+            <li><button onclick="loadPDF('unidad1/unidad1_tarea1.pdf'); loadText('unida1tarea1')">Actividad 1. Arquitectura de una aplicación web</button></li>
+            <li><button onclick="loadPDF('unidad1/unidad1_tarea2.pdf'); loadText('unida1tarea2')">Actividad 2. Protocolo HTTP y HTTPS</button></li>
+            <li><button onclick="loadPDF('unidad1/unidad1_tarea3.pdf'); loadText('unida1tarea3')">Actividad 3. Estructura básica de un documento HTML</button></li>
+            <li><button onclick="loadPDF('unidad1/unidad1_tarea4.pdf'); loadText('unida1tarea4')">Actividad 4. Principales etiquetas y atributos de HTML</button></li>
+            <li><button onclick="loadPDF('unidad1/unidad1_tarea5.pdf'); loadText('unida1tarea5')">Actividad 5. Formularios y elementos multimedia</button></li>
+            <li><button onclick="loadPDF('unidad1/unidad1_tarea9.pdf'); loadText('unida1tarea9')">Actividad 9. Demostrar el ambiente de desarrollo en la computadora del estudiante</button></li>
+            <li><button onclick="loadPDF('unidad1/unidad1_tarea10.pdf'); loadText('unida1tarea10')">Actividad 10. Desarrollar una aplicación web que autentique un usuario válido</button></li>
+            <li><button onclick="loadPDF('unidad1/unidad1_tarea12.pdf'); loadText('unida1tarea12')">Actividad 12. XML</button></li>
+            <li><button onclick="loadPDF('unidad1/unidad1_tarea13.pdf'); loadText('unida1tarea13')">Actividad 13. JSON</button></li>
           </ul>
         </li>
 
@@ -39,8 +38,9 @@
         <li>
           <button onclick="toggleTopics('unit2-topics')">U2 - Desarrollo del Lado del Cliente</button>
           <ul id="unit2-topics" class="topics hidden">
-            <li><button onclick="loadPDF('unidad2/unidad2_tarea1.pdf')">Actividad 14. Realizar el ejemplo del Login con React</button></li>
-            <li><button onclick="loadPDF('unidad2/unidad2_tarea2.pdf')">Actividad 15. Desarrollar una forma Login con VUE</button></li>
+            <li><button onclick="loadPDF('unidad2/unidad2_tarea1.pdf'); loadText('unida2tarea1')">Actividad 14. Realizar el ejemplo del Login con React</button></li>
+            <li><button onclick="loadPDF('unidad2/unidad2_tarea2.pdf'); loadText('unida2tarea2')">Actividad 15. Desarrollar una forma Login con VUE</button></li>
+            <li><button onclick="loadPDF('unidad2/unidad2_tarea3.pdf'); loadText('unida2tarea3')">Actividad 17. Crear un sitio web estático con el framework Wordpress</button></li>
           </ul>
         </li>
 
@@ -48,7 +48,7 @@
         <li>
           <button onclick="toggleTopics('unit3-topics')">U3 - Desarrollo del Lado del Servidor</button>
           <ul id="unit3-topics" class="topics hidden">
-            <li><button onclick="loadPDF('unidad3/unidad3_tarea1.pdf')">3.2.1 Laravel</button></li>
+            <li><button onclick="loadPDF('unidad3/unidad3_tarea1.pdf'); loadText('unida3tarea1')">3.2.1 Laravel</button></li>
           </ul>
         </li>
 
@@ -56,8 +56,8 @@
         <li>
           <button onclick="toggleTopics('unit4-topics')">U4 - Integración y Herramientas</button>
           <ul id="unit4-topics" class="topics hidden">
-            <li><button onclick="loadPDF('unidad4/unidad4_tarea1.pdf')">4.1.1 Implementar un servicio WEB para una API que informe el clima</button></li>
-            <li><button onclick="loadPDF('unidad4/unidad4_tarea2.pdf')">4.2.1 Práctica de GitHub</button></li>
+            <li><button onclick="loadPDF('unidad4/unidad4_tarea1.pdf'); loadText('unida4tarea1')">4.1.1 Implementar un servicio WEB para una API que informe el clima</button></li>
+            <li><button onclick="loadPDF('unidad4/unidad4_tarea2.pdf'); loadText('unida4tarea2')">4.2.1 Práctica de GitHub</button></li>
           </ul>
         </li>
       </ul>
@@ -68,7 +68,124 @@
       <h1>Portafolio de Evidencias</h1>
       <div id="pdf-viewer">
         <iframe id="pdf-frame" src="" title="Visor de PDF"></iframe>
+        <div id="unida1tarea1" style="display: none;" class="card">
+            <h2>Actividad 1: Arquitectura de una aplicación web</h2>
+            <p><strong>Descripción:</strong> Esta actividad consistió en un cuestionario para evaluar la estructura básica de una aplicación web.</p>
+            <p><strong>Fecha:</strong> 28 de agosto de 2024</p>
+            <p><strong>Resultados:</strong> Recordar y verificar mi conocimiento sobre el tema.</p>
+            <p><strong>Reflexión personal:</strong> Esta actividad me permitió reforzar mi conocimiento técnico acerca de la estructura básica de una aplicación web.</p>
+          </div>                   
       </div>
+      <div id="unida1tarea2" style="display: none;" class="card">
+        <h2>Actividad 2: Protocolo HTTP y HTTPS</h2>
+        <p><strong>Descripción:</strong> Esta actividad consistió en un cuestionario para evaluar y comprender las diferencias y características de los protocolos HTTP y HTTPS.</p>
+        <p><strong>Fecha:</strong> 30 de agosto de 2024</p>
+        <p><strong>Resultados:</strong> Recordar y verificar mi conocimiento sobre el tema.</p>
+        <p><strong>Reflexión personal:</strong> Esta actividad me permitió reforzar mi conocimiento técnico acerca de los protocolos de comunicación HTTP y HTTPS, y su importancia en la seguridad de las aplicaciones web.</p>
+      </div>
+      <div id="unida1tarea3" style="display: none;" class="card">
+        <h2>Actividad 3: Estructura básica de un documento HTML</h2>
+        <p><strong>Descripción:</strong> Esta actividad consistió en crear un documento HTML básico, comprendiendo las etiquetas fundamentales como &lt;html&gt;, &lt;head&gt;, &lt;body&gt;, y su función en la estructura de una página web.</p>
+        <p><strong>Fecha:</strong> 13 de septiembre de 2024</p>
+        <p><strong>Resultados:</strong> Crear una página HTML con la estructura básica, demostrando comprensión de la organización de un documento web.</p>
+        <p><strong>Reflexión personal:</strong> Esta actividad me permitió entender mejor la estructura fundamental de una página web, lo cual es esencial para todo desarrollo web. Me ayudó a ver la importancia de las etiquetas y su jerarquía en la creación de contenido web.</p>
+      </div>
+      
+      <div id="unida1tarea4" style="display: none;" class="card">
+        <h2>Actividad 4: Principales etiquetas y atributos de HTML</h2>
+        <p><strong>Descripción:</strong> En esta actividad se exploraron las etiquetas más comunes de HTML como &lt;a&gt;, &lt;img&gt;, &lt;p&gt;, y cómo se utilizan sus atributos como href, src, alt, etc., para definir enlaces e insertar imágenes.</p>
+        <p><strong>Fecha:</strong> 13 de septiembre de 2024</p>
+        <p><strong>Resultados:</strong> Crear un documento HTML utilizando varias etiquetas y atributos esenciales para enlaces y contenido multimedia.</p>
+        <p><strong>Reflexión personal:</strong> Esta actividad me ayudó a afianzar el uso adecuado de las etiquetas de HTML, permitiéndome construir páginas más interactivas y visuales mediante el uso de enlaces y contenido multimedia.</p>
+      </div>
+      
+      <div id="unida1tarea5" style="display: none;" class="card">
+        <h2>Actividad 5: Formularios y elementos multimedia</h2>
+        <p><strong>Descripción:</strong> La actividad consistió en aprender a crear formularios HTML para recopilar información de los usuarios, así como el uso de elementos multimedia como &lt;audio&gt; y &lt;video&gt;.</p>
+        <p><strong>Fecha:</strong> 13 de septiembre de 2024</p>
+        <p><strong>Resultados:</strong> Crear formularios funcionales e integrar contenido multimedia como audio y video en una página HTML.</p>
+        <p><strong>Reflexión personal:</strong> Esta actividad me permitió entender cómo interactúan los formularios y los elementos multimedia en una página web. Es fundamental en el desarrollo web contar con formularios bien estructurados para la recopilación de datos y la integración de contenido multimedia para enriquecer la experiencia del usuario.</p>
+      </div>
+      <div id="unida1tarea9" style="display: none;" class="card">
+        <h2>Actividad 9: Demostrar el ambiente de desarrollo en la computadora del estudiante</h2>
+        <p><strong>Descripción:</strong> Esta actividad consistió en instalar VirtualBox con Debian 12 minimal, además de descargar MariaDB y PHP para configurar el servidor virtual.</p>
+        <p><strong>Fecha:</strong> 5 de septiembre de 2024</p>
+        <p><strong>Resultados:</strong> Configuración exitosa del entorno de desarrollo con Debian, MariaDB y PHP en un servidor virtual.</p>
+        <p><strong>Reflexión personal:</strong> Esta actividad me permitió familiarizarme con la configuración de un entorno de desarrollo virtualizado, lo que es esencial para la creación de aplicaciones web.</p>
+      </div>
+      
+      <div id="unida1tarea10" style="display: none;" class="card">
+        <h2>Actividad 10: Desarrollar una aplicación web que autentique un usuario válido</h2>
+        <p><strong>Descripción:</strong> Esta actividad consistió en crear una base de datos MySQL con una tabla de usuarios para ingresar y validar datos de usuarios a través de un formulario de login con PHP en el servidor virtual.</p>
+        <p><strong>Fecha:</strong> 17 de septiembre de 2024</p>
+        <p><strong>Resultados:</strong> Base de datos creada exitosamente con validación de usuarios mediante formulario de login en PHP.</p>
+        <p><strong>Reflexión personal:</strong> Esta actividad me permitió practicar la integración de bases de datos con formularios de login en PHP, lo que es fundamental en el desarrollo web dinámico.</p>
+      </div>
+      
+      <div id="unida1tarea12" style="display: none;" class="card">
+        <h2>Actividad 12: Convertir datos desde un archivo CSV a XML</h2>
+        <p><strong>Descripción:</strong> Esta actividad consistió en crear un script PHP para convertir datos desde un archivo CSV a formato XML.</p>
+        <p><strong>Fecha:</strong> 27 de septiembre de 2024</p>
+        <p><strong>Resultados:</strong> Logré convertir exitosamente los datos del archivo CSV a formato XML utilizando PHP.</p>
+        <p><strong>Reflexión personal:</strong> Esta actividad me permitió profundizar en el manejo de archivos y formatos de datos, habilidades importantes para el desarrollo de aplicaciones que interactúan con archivos externos.</p>
+      </div>
+      
+      <div id="unida1tarea13" style="display: none;" class="card">
+        <h2>Actividad 13: Convertir datos desde un archivo CSV a JSON</h2>
+        <p><strong>Descripción:</strong> Esta actividad consistió en crear un script PHP para convertir datos desde un archivo CSV a formato JSON.</p>
+        <p><strong>Fecha:</strong> 27 de septiembre de 2024</p>
+        <p><strong>Resultados:</strong> Logré convertir exitosamente los datos del archivo CSV a formato JSON utilizando PHP.</p>
+        <p><strong>Reflexión personal:</strong> Esta actividad me permitió aprender cómo trabajar con archivos JSON y mejorar mis habilidades de manipulación de datos para diferentes propósitos.</p>
+      </div>
+
+      <div id="unida2tarea1" style="display: none;" class="card">
+        <h2>Actividad 14: Realizar un ejemplo de login con React</h2>
+        <p><strong>Descripción:</strong> Esta actividad consistió en implementar un ejemplo de formulario de inicio de sesión utilizando React.</p>
+        <p><strong>Fecha:</strong> 18 de octubre de 2024</p>
+        <p><strong>Resultados:</strong> Se desarrolló con éxito un formulario funcional de login con React, demostrando el uso de componentes y estado.</p>
+        <p><strong>Reflexión personal:</strong> Esta actividad me permitió profundizar en el uso de React, específicamente en la gestión de estado y componentes, elementos clave para el desarrollo de interfaces modernas y dinámicas.</p>
+      </div>
+
+      <div id="unida2tarea2" style="display: none;" class="card">
+        <h2>Actividad 15: Desarrollar un formulario de login con Vue</h2>
+        <p><strong>Descripción:</strong> Esta actividad consistió en implementar un formulario de inicio de sesión utilizando Vue.</p>
+        <p><strong>Fecha:</strong> 21 de octubre de 2024</p>
+        <p><strong>Resultados:</strong> Se logró desarrollar un formulario funcional de login con Vue, empleando técnicas de enlace de datos y componentes.</p>
+        <p><strong>Reflexión personal:</strong> Esta actividad me permitió reforzar mi conocimiento en Vue, especialmente en el manejo de eventos y la interacción entre componentes, herramientas esenciales para aplicaciones web dinámicas.</p>
+      </div>
+
+      <div id="unida2tarea3" style="display: none;" class="card">
+        <h2>Actividad 17: Crear un sitio web estático con WordPress</h2>
+        <p><strong>Descripción:</strong> Esta actividad consistió en desarrollar un sitio web estático utilizando WordPress como CMS.</p>
+        <p><strong>Fecha:</strong> 12 de noviembre de 2024</p>
+        <p><strong>Resultados:</strong> Se creó un sitio web estático funcional, demostrando habilidades en la configuración y personalización de temas en WordPress.</p>
+        <p><strong>Reflexión personal:</strong> Esta actividad me permitió comprender cómo WordPress puede facilitar la creación de sitios web rápidos y efectivos, destacando su utilidad para proyectos con requisitos básicos de diseño y funcionalidad.</p>
+      </div>
+      
+      <div id="unida3tarea1" style="display: none;" class="card">
+        <h2>3.2.1 Laravel</h2>
+        <p><strong>Descripción:</strong> Este ejemplo básico de login muestra cómo crear una aplicación sencilla con Laravel, administrar usuarios y autenticación, y establecer conexiones con una base de datos.</p>
+        <p><strong>Fecha:</strong> 13 de noviembre de 2024</p>
+        <p><strong>Resultados:</strong> Comprender el flujo básico de autenticación en Laravel, incluyendo el manejo de usuarios y conexiones con bases de datos.</p>
+        <p><strong>Reflexión personal:</strong> Esta actividad me introdujo a las ventajas de usar Laravel para el desarrollo de aplicaciones web, destacando su estructura modular y la facilidad para implementar funcionalidades esenciales como la autenticación.</p>
+      </div>
+      
+      <div id="unida4tarea1" style="display: none;" class="card">
+        <h2>4.1.1 Implementar un servicio web para una API que informe el clima</h2>
+        <p><strong>Descripción:</strong> Imagina que tienes una aplicación web o móvil que quiere mostrar el clima actual de una ciudad. La aplicación hará una solicitud a un servicio web que le proporcionará los datos de temperatura, humedad y condiciones del clima en una ubicación específica.</p>
+        <p><strong>Fecha:</strong> 18 de noviembre de 2024</p>
+        <p><strong>Resultados:</strong> Aprender a implementar un servicio web para consumir y mostrar información de una API externa de manera dinámica.</p>
+        <p><strong>Reflexión personal:</strong> Esta actividad fue crucial para comprender cómo integrar servicios web en aplicaciones, lo que es esencial para aplicaciones modernas que necesitan consumir datos externos en tiempo real.</p>
+      </div>
+
+      <div id="unida4tarea2" style="display: none;" class="card">
+        <h2>4.2.1 Práctica de GitHub</h2>
+        <p><strong>Descripción:</strong> Ejemplo práctico paso a paso de un pequeño proyecto de HTML y CSS para un sitio web, que posteriormente fue subido a GitHub como parte del aprendizaje de control de versiones y colaboración.</p>
+        <p><strong>Fecha:</strong> 24 de noviembre de 2024</p>
+        <p><strong>Resultados:</strong> Comprender el flujo básico de trabajo con GitHub para subir, versionar y compartir proyectos web.</p>
+        <p><strong>Reflexión personal:</strong> Esta actividad me ayudó a reforzar habilidades esenciales para la colaboración en proyectos web, incluyendo el uso de herramientas de control de versiones y la importancia de un código bien organizado.</p>
+      </div>
+      
     </main>
   </div>
 

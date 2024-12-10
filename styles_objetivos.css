@@ -1,0 +1,95 @@
+/* Estilos Generales */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+.objectives-page {
+    display: flex;
+    flex-direction: row;
+    height: auto; /* Permite que la altura cambie dinámicamente */
+  }
+  
+  /* Contenedor de la Imagen (con fondo) */
+  .image-container {
+    position: sticky;
+    top: 0; /* La imagen se quedará pegada a la parte superior cuando haga scroll */
+    width: 50%; /* O cualquier valor que quieras para el ancho de la imagen */
+    height: 100vh; /* Esto hace que la imagen ocupe la altura de la pantalla */
+    background-color: #f3e7f3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .image-container img {
+    width: 100%;
+    height: auto; /* La imagen se ajusta automáticamente a su contenedor */
+    object-fit: cover; /* Asegura que la imagen no se distorsione */
+  }
+  
+  /* Título dentro de la imagen */
+  .image-container h1 {
+    position: absolute;
+    color: hsl(0, 0%, 100%);
+    font-size: 3em;
+    text-transform: uppercase;
+    text-shadow: 0px 4px 6px rgba(0, 0, 0, 0.6); 
+    background: rgba(0, 0, 128, 0.6); 
+  }
+  
+  /* Contenedor de Objetivos */
+  .objectives-content {
+    flex: 2;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    z-index: 1; /* Asegura que el contenido esté sobre la imagen */
+  }
+  
+  /* Objetivo General */
+  .objective-general-card {
+    background: linear-gradient(135deg, #d4cbe8, #f3e7f3);
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .objective-general-card h2 {
+    font-size: 1.8em;
+    color: #3e2a57;
+    margin-bottom: 15px;
+  }
+  
+  .objective-general-card p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #5a5a5a;
+  }
+
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .objectives-page {
+        flex-direction: column;
+    }
+
+    .image-container {
+        flex: 0.5;
+    }
+
+    .objectives-content {
+        flex: 1.5;
+    }
+
+    .specific-objectives {
+        flex-direction: column;
+        gap: 10px;
+    }
+}

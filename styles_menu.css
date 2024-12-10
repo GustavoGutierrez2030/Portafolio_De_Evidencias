@@ -1,0 +1,100 @@
+/* Estilos Generales */
+body {
+    font-family: 'Poppins', sans-serif; /* Fuente atractiva */
+    margin: 0;
+    padding: 0;
+    background-color: #e5dfdf;
+    color: #333;
+  }
+  
+  .container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Estilos del Encabezado */
+  .header {
+    background: url('banner.jpg') no-repeat center center/cover; /* Imagen de fondo */
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+  }
+  
+  .header h1 {
+    font-size: 2.5em;
+    text-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    font-weight: bold;
+  }
+  
+  /* Estilos para la Introducción */
+  .intro {
+    text-align: center;
+    margin: 40px 0;
+  }
+  
+  .intro h2 {
+    font-size: 1.8em;
+    color: #4a3f5e;
+    margin-bottom: 10px;
+  }
+  
+  .intro p, .intro ul {
+    font-size: 1em;
+    line-height: 1.5;
+    color: #595959;
+  }
+  
+  .intro ul {
+    text-align: left;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .menu {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .card {
+    background: linear-gradient(135deg, #d4bdf0, #e8d6ff); /* Pasteles morado y lavanda */
+    border: 1px solid #c4c4c4;
+    border-radius: 15px;
+    color: #4a4a4a;
+    padding: 20px;
+    text-align: center;
+    width: 30%;
+    min-width: 250px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  }
+  
+  .card h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #4a3f5e; /* Morado suave */
+  }
+  
+  .card p {
+    font-size: 1em;
+    line-height: 1.5;
+    color: #595959;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+  }
+
+  @media (max-width: 768px) {
+    .menu {
+      flex-direction: column; /* Cambia a vertical en pantallas pequeñas */
+    }
+  }
+  

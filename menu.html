@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menú del Portafolio</title>
+  <link rel="stylesheet" href="styles_menu.css">
+</head>
+<body>
+  <!-- Sección del encabezado con fondo -->
+  <header class="header">
+    <h1>Bienvenido a mi Portafolio</h1>
+  </header>
+
+  <!-- Contenedor Principal -->
+  <div class="container">
+    <!-- Introducción -->
+    <section class="intro">
+      <h2>Introducción</h2>
+      <p><strong>Breve descripción del propósito del portafolio:</strong></p>
+      <ul>
+        <li>¿Qué se documenta? Este portafolio documenta actividades, evidencias y reflexiones realizadas durante el curso.</li>
+        <li>¿Por qué es importante? Es importante porque permite organizar y mostrar los aprendizajes y logros alcanzados de manera estructurada.</li>
+        <li>Explicación del enfoque o metodología: Utiliza un enfoque basado en evidencias, categorizado en secciones como objetivos, actividades y reflexiones finales.</li>
+      </ul>
+    </section>
+
+    <!-- Menú con Tarjetas -->
+    <section class="menu">
+      <!-- Card: Objetivos -->
+      <div class="card" onclick="navigateTo('objetivos.html')">
+        <h3>Objetivos</h3>
+        <p>Conoce los objetivos principales del curso y del portafolio.</p>
+      </div>
+
+      <!-- Card: Portafolio -->
+      <div class="card" onclick="navigateTo('portafolio.html')">
+        <h3>Portafolio</h3>
+        <p>Explora todas las actividades documentadas en el curso.</p>
+      </div>
+
+      <!-- Card: Reflexión Final -->
+      <div class="card" onclick="navigateTo('reflexion_final.html')">
+        <h3>Reflexión Final</h3>
+        <p>Lee mis reflexiones sobre el aprendizaje obtenido en el curso.</p>
+      </div>
+    </section>
+  </div>
+
+  <!-- Script de Navegación -->
+  <script>
+    function navigateTo(url) {
+      window.location.href = url;
+    }
+  </script>
+</body>
+</html>

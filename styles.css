@@ -15,7 +15,7 @@ h1 {
   color: #f1f1f1; /* Color blanco suave para los títulos */
 }
 
-button {
+.enter-button {
   cursor: pointer;
   border: none;
   background-color: #4CAF50;
@@ -25,7 +25,7 @@ button {
   transition: background-color 0.3s ease;
 }
 
-button:hover {
+.enter-button:hover {
   background-color: #45a049;
 }
 
@@ -217,7 +217,7 @@ button:hover {
 
 /* Efecto hover sobre el botón */
 .back-button-sidebar:hover {
-  color: #0056b3; /* Cambio de color cuando se pasa el ratón */
+  color: #f8fd74; /* Cambio de color cuando se pasa el ratón */
   transform: scale(1.1); /* Ligeramente más grande al pasar el ratón */
 }
 
@@ -231,4 +231,38 @@ button:hover {
   100% {
     background-position: 0% 50%;
   }
+}
+
+.card {
+  background: linear-gradient(135deg, #d4bdf0, #e8d6ff); /* Pasteles morado y lavanda */
+  border: 1px solid #c4c4c4; /* Gris suave */
+  border-radius: 15px;
+  color: #4a4a4a; /* Texto gris oscuro */
+  padding: 20px;
+  max-width: 600px;
+  margin: 20px auto;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.card h2 {
+  font-size: 1.8em;
+  margin-bottom: 15px;
+  color: #4a3f5e; /* Morado suave */
+  text-align: center;
+}
+
+.card p {
+  font-size: 1em;
+  line-height: 1.6;
+  margin: 10px 0;
+}
+
+.card p strong {
+  color: #4a3f5e; /* Morado suave */
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
 }

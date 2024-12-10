@@ -1,6 +1,6 @@
 function enterPortfolio() {
   // Redirigir a la página del portafolio
-  window.location.href = "portafolio.html";
+  window.location.href = "menu.html";
 }
 
 function toggleTopics(topicId) {
@@ -19,6 +19,24 @@ function loadPDF(pdfPath) {
   }
 }
 
+function loadText(textito) {
+  // Oculta todas las tarjetas
+  const cards = document.querySelectorAll('.card');
+  cards.forEach(card => {
+    card.style.display = "none";
+  });
+
+  // Muestra solo la tarjeta seleccionada
+  const textFrame = document.getElementById(textito);
+  if (textFrame) {
+    textFrame.style.display = "block";
+  } else {
+    console.error(`No se encontró un elemento con el ID "${textito}"`);
+  }
+}
+
+
+
 function toggleSidebar() {
   const sidebar = document.querySelector('.sidebar');
   const mainContent = document.querySelector('.main-content');
@@ -28,6 +46,6 @@ function toggleSidebar() {
 
 function goBackToHome() {
   // Aquí puedes redirigir al usuario a la página principal (portada)
-  window.location.href = 'index.html'; // Cambia 'index.html' por la ruta de tu página principal si es diferente
+  window.location.href = 'menu.html'; // Cambia 'index.html' por la ruta de tu página principal si es diferente
 }
 
